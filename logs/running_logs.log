@@ -1,0 +1,10 @@
+[2025-12-09 12:47:02,080: INFO: main]: This is a log message from main.py]
+[2025-12-09 17:29:25,811: INFO: main]: This is a log message from main.py]
+[2025-12-09 17:31:57,685: INFO: main]: This is a log message from main.py]
+[2025-12-09 17:31:57,974: INFO: main]: >>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2025-12-09 17:31:57,976: INFO: common]: created directory at: artifacts]
+[2025-12-09 17:31:57,976: INFO: common]: created directory at: artifacts/data_ingestion]
+[2025-12-09 17:31:57,976: INFO: data_ingestion]: File already exists of size: ~ 11345 KB]
+[2025-12-09 17:31:58,114: INFO: main]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
