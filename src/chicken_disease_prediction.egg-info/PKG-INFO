@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: chicken_disease_prediction
+Version: 0.0.0
+Summary: A small python package for chicken disease prediction
+Home-page: https://github.com/Kasunianupama/Chicken-disease-classification
+Author: Kasunianupama
+Author-email: kasunianupama509@gmail.com
+Project-URL: Bug Tracker, https://github.com/Kasunianupama/Chicken-disease-classification/issues
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: project-url
+Dynamic: summary
+
+# Chicken-disease-classification
+building a CNN project for classify a chicken disease as healthy or not.
