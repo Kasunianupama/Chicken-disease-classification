@@ -369,3 +369,236 @@ x==========x]
 [2025-12-13 19:16:20,294: INFO: main]: >>>>>> Stage Training Stage completed <<<<<<
 
 x==========x]
+[2025-12-13 19:28:09,465: INFO: common]: created directory at: artifacts]
+[2025-12-13 19:28:10,199: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-12-13 19:31:34,315: INFO: common]: created directory at: artifacts]
+[2025-12-13 19:31:34,856: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-12-13 19:31:36,774: INFO: common]: json file saved at: scores.json]
+[2025-12-13 19:52:34,652: INFO: main]: This is a log message from main.py]
+[2025-12-13 19:52:34,652: INFO: main]: >>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2025-12-13 19:52:34,655: INFO: common]: created directory at: artifacts]
+[2025-12-13 19:52:34,656: INFO: common]: created directory at: artifacts/data_ingestion]
+[2025-12-13 19:53:17,674: INFO: data_ingestion]: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: BD28:1D69BD:19BCD1:2B9545:693D76AC
+Accept-Ranges: bytes
+Date: Sat, 13 Dec 2025 14:22:38 GMT
+Via: 1.1 varnish
+X-Served-By: cache-sin-wsss1830078-SIN
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1765635757.669117,VS0,VE1517
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 0b5d0a3b0237b437331b00ab1cdd66bb9c14acd2
+Expires: Sat, 13 Dec 2025 14:27:38 GMT
+Source-Age: 1
+
+]
+[2025-12-13 19:53:17,877: INFO: main]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2025-12-13 19:53:17,878: INFO: main]: >>>>>> Stage Prepare Base Model Stage started <<<<<<]
+[2025-12-13 19:53:17,880: INFO: common]: created directory at: artifacts]
+[2025-12-13 19:53:17,880: INFO: common]: created directory at: artifacts/prepare_base_model]
+[2025-12-13 19:53:18,827: WARNING: saving_api]: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-12-13 19:53:19,043: WARNING: saving_api]: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-12-13 19:53:19,236: INFO: main]: >>>>>> Stage Prepare Base Model Stage completed <<<<<<
+
+x==========x]
+[2025-12-13 19:53:19,236: INFO: main]: >>>>>> Stage Training Stage started <<<<<<]
+[2025-12-13 19:53:19,240: INFO: common]: created directory at: artifacts]
+[2025-12-13 19:53:19,240: ERROR: main]: name 'os' is not defined]
+Traceback (most recent call last):
+  File "C:\Users\User\Documents\CNN\Chicken disease\Chicken-disease-classification\main.py", line 100, in <module>
+    model_trainer.main()
+  File "C:\Users\User\Documents\CNN\Chicken disease\Chicken-disease-classification\src\chicken_disease_prediction\pipeline\stage_03_training.py", line 17, in main
+    prepare_callbacks_config = config.get_prepare_callback_config()
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Documents\CNN\Chicken disease\Chicken-disease-classification\src\chicken_disease_prediction\config\configuration.py", line 63, in get_prepare_callback_config
+    model_ckpt_dir = os.path.dirname(config.checkpoint_model_filepath)
+                     ^^
+NameError: name 'os' is not defined. Did you forget to import 'os'
+[2025-12-13 19:55:28,598: INFO: main]: This is a log message from main.py]
+[2025-12-13 19:55:28,598: INFO: main]: >>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2025-12-13 19:55:28,606: INFO: common]: created directory at: artifacts]
+[2025-12-13 19:55:28,606: INFO: common]: created directory at: artifacts/data_ingestion]
+[2025-12-13 19:55:28,607: INFO: data_ingestion]: File already exists of size: ~ 11345 KB]
+[2025-12-13 19:55:28,764: INFO: main]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2025-12-13 19:55:28,765: INFO: main]: >>>>>> Stage Prepare Base Model Stage started <<<<<<]
+[2025-12-13 19:55:28,767: INFO: common]: created directory at: artifacts]
+[2025-12-13 19:55:28,767: INFO: common]: created directory at: artifacts/prepare_base_model]
+[2025-12-13 19:55:29,352: WARNING: saving_api]: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-12-13 19:55:29,492: WARNING: saving_api]: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-12-13 19:55:29,599: INFO: main]: >>>>>> Stage Prepare Base Model Stage completed <<<<<<
+
+x==========x]
+[2025-12-13 19:55:29,599: INFO: main]: >>>>>> Stage Training Stage started <<<<<<]
+[2025-12-13 19:55:29,604: INFO: common]: created directory at: artifacts]
+[2025-12-13 19:55:29,604: INFO: common]: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2025-12-13 19:55:29,604: INFO: common]: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2025-12-13 19:55:29,604: INFO: common]: created directory at: artifacts/training]
+[2025-12-13 19:56:04,996: WARNING: saving_api]: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-12-13 19:56:05,823: WARNING: saving_api]: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-12-13 19:56:06,024: INFO: main]: >>>>>> Stage Training Stage completed <<<<<<
+
+x==========x]
+[2025-12-13 19:56:06,024: INFO: main]: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-12-13 19:56:06,041: INFO: common]: created directory at: artifacts]
+[2025-12-13 19:56:06,041: ERROR: main]: ValidationConfig.__init__() got an unexpected keyword argument 'path_of_model']
+Traceback (most recent call last):
+  File "C:\Users\User\Documents\CNN\Chicken disease\Chicken-disease-classification\main.py", line 110, in <module>
+    evaluation.main()
+  File "C:\Users\User\Documents\CNN\Chicken disease\Chicken-disease-classification\src\chicken_disease_prediction\pipeline\stage_04_evaluation.py", line 17, in main
+    val_config = config.get_validation_config()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Documents\CNN\Chicken disease\Chicken-disease-classification\src\chicken_disease_prediction\config\configuration.py", line 101, in get_validation_config
+    eval_config = EvaluationConfig(
+                  ^^^^^^^^^^^^^^^^^
+TypeError: ValidationConfig.__init__() got an unexpected keyword argument 'path_of_model'
+[2025-12-13 19:58:56,288: INFO: main]: This is a log message from main.py]
+[2025-12-13 19:58:56,288: INFO: main]: >>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2025-12-13 19:58:56,291: INFO: common]: created directory at: artifacts]
+[2025-12-13 19:58:56,291: INFO: common]: created directory at: artifacts/data_ingestion]
+[2025-12-13 19:58:56,291: INFO: data_ingestion]: File already exists of size: ~ 11345 KB]
+[2025-12-13 19:58:56,449: INFO: main]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2025-12-13 19:58:56,449: INFO: main]: >>>>>> Stage Prepare Base Model Stage started <<<<<<]
+[2025-12-13 19:58:56,452: INFO: common]: created directory at: artifacts]
+[2025-12-13 19:58:56,452: INFO: common]: created directory at: artifacts/prepare_base_model]
+[2025-12-13 19:58:57,062: WARNING: saving_api]: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-12-13 19:58:57,199: WARNING: saving_api]: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-12-13 19:58:57,298: INFO: main]: >>>>>> Stage Prepare Base Model Stage completed <<<<<<
+
+x==========x]
+[2025-12-13 19:58:57,298: INFO: main]: >>>>>> Stage Training Stage started <<<<<<]
+[2025-12-13 19:58:57,310: INFO: common]: created directory at: artifacts]
+[2025-12-13 19:58:57,311: INFO: common]: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2025-12-13 19:58:57,311: INFO: common]: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2025-12-13 19:58:57,312: INFO: common]: created directory at: artifacts/training]
+[2025-12-13 19:59:30,388: WARNING: saving_api]: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-12-13 19:59:30,723: WARNING: saving_api]: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-12-13 19:59:31,019: INFO: main]: >>>>>> Stage Training Stage completed <<<<<<
+
+x==========x]
+[2025-12-13 19:59:31,019: INFO: main]: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-12-13 19:59:31,023: INFO: common]: created directory at: artifacts]
+[2025-12-13 19:59:31,485: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-12-13 19:59:32,199: ERROR: main]: Argument `output` must have rank (ndim) `target.ndim - 1`. Received: target.shape=(None, 2), output.shape=(None, 2)]
+Traceback (most recent call last):
+  File "C:\Users\User\Documents\CNN\Chicken disease\Chicken-disease-classification\main.py", line 110, in <module>
+    evaluation.main()
+  File "C:\Users\User\Documents\CNN\Chicken disease\Chicken-disease-classification\src\chicken_disease_prediction\pipeline\stage_04_evaluation.py", line 19, in main
+    evaluation.evaluation()
+  File "C:\Users\User\Documents\CNN\Chicken disease\Chicken-disease-classification\src\chicken_disease_prediction\components\evaluation.py", line 46, in evaluation
+    self.score = model.evaluate(self.valid_generator)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\anaconda3\envs\chicken\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\User\anaconda3\envs\chicken\Lib\site-packages\keras\src\backend\tensorflow\nn.py", line 734, in sparse_categorical_crossentropy
+    raise ValueError(
+ValueError: Argument `output` must have rank (ndim) `target.ndim - 1`. Received: target.shape=(None, 2), output.shape=(None, 2)
+[2025-12-13 20:05:49,098: INFO: main]: This is a log message from main.py]
+[2025-12-13 20:05:49,098: INFO: main]: >>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2025-12-13 20:05:49,113: INFO: common]: created directory at: artifacts]
+[2025-12-13 20:05:49,113: INFO: common]: created directory at: artifacts/data_ingestion]
+[2025-12-13 20:05:49,114: INFO: data_ingestion]: File already exists of size: ~ 11345 KB]
+[2025-12-13 20:05:49,265: INFO: main]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2025-12-13 20:05:49,265: INFO: main]: >>>>>> Stage Prepare Base Model Stage started <<<<<<]
+[2025-12-13 20:05:49,267: INFO: common]: created directory at: artifacts]
+[2025-12-13 20:05:49,268: INFO: common]: created directory at: artifacts/prepare_base_model]
+[2025-12-13 20:05:49,850: WARNING: saving_api]: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-12-13 20:05:49,990: WARNING: saving_api]: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-12-13 20:05:50,099: INFO: main]: >>>>>> Stage Prepare Base Model Stage completed <<<<<<
+
+x==========x]
+[2025-12-13 20:05:50,099: INFO: main]: >>>>>> Stage Training Stage started <<<<<<]
+[2025-12-13 20:05:50,099: INFO: common]: created directory at: artifacts]
+[2025-12-13 20:05:50,099: INFO: common]: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2025-12-13 20:05:50,099: INFO: common]: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2025-12-13 20:05:50,099: INFO: common]: created directory at: artifacts/training]
+[2025-12-13 20:06:22,798: WARNING: saving_api]: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-12-13 20:06:23,699: WARNING: saving_api]: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-12-13 20:06:23,893: INFO: main]: >>>>>> Stage Training Stage completed <<<<<<
+
+x==========x]
+[2025-12-13 20:06:23,894: INFO: main]: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-12-13 20:06:23,896: INFO: common]: created directory at: artifacts]
+[2025-12-13 20:06:26,665: INFO: common]: json file saved at: scores.json]
+[2025-12-13 20:06:26,666: INFO: main]: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-12-13 20:30:21,030: INFO: stage_01_data_ingestion]: >>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2025-12-13 20:30:21,033: INFO: common]: created directory at: artifacts]
+[2025-12-13 20:30:21,033: INFO: common]: created directory at: artifacts/data_ingestion]
+[2025-12-13 20:31:32,194: INFO: data_ingestion]: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: BD28:1D69BD:19BCD1:2B9545:693D76AC
+Accept-Ranges: bytes
+Date: Sat, 13 Dec 2025 15:00:22 GMT
+Via: 1.1 varnish
+X-Served-By: cache-sin-wsss1830032-SIN
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1765638022.202627,VS0,VE244
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 6cf129a4f6391889f8f40fa54784fd0d5e9c0ead
+Expires: Sat, 13 Dec 2025 15:05:22 GMT
+Source-Age: 0
+
+]
+[2025-12-13 20:31:32,407: INFO: stage_01_data_ingestion]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2025-12-13 20:31:39,437: INFO: stage_02_prepare_base_model]: >>>>>> Stage Prepare Base Model Stage started <<<<<<]
+[2025-12-13 20:31:39,441: INFO: common]: created directory at: artifacts]
+[2025-12-13 20:31:39,442: INFO: common]: created directory at: artifacts/prepare_base_model]
+[2025-12-13 20:31:40,446: WARNING: saving_api]: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-12-13 20:31:40,695: WARNING: saving_api]: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-12-13 20:31:40,895: INFO: stage_02_prepare_base_model]: >>>>>> Stage Prepare Base Model Stage completed <<<<<<
+
+x==========x]
+[2025-12-13 20:31:46,742: INFO: stage_03_training]: *******************]
+[2025-12-13 20:31:46,743: INFO: stage_03_training]: >>>>>> stage Training started <<<<<<]
+[2025-12-13 20:31:46,747: INFO: common]: created directory at: artifacts]
+[2025-12-13 20:31:46,748: INFO: common]: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2025-12-13 20:31:46,749: INFO: common]: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2025-12-13 20:31:46,749: INFO: common]: created directory at: artifacts/training]
+[2025-12-13 20:32:27,742: WARNING: saving_api]: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-12-13 20:32:28,237: WARNING: saving_api]: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-12-13 20:32:28,625: INFO: stage_03_training]: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2025-12-13 20:32:36,211: INFO: stage_04_evaluation]: *******************]
+[2025-12-13 20:32:36,211: INFO: stage_04_evaluation]: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-12-13 20:32:36,216: INFO: common]: created directory at: artifacts]
+[2025-12-13 20:32:41,825: INFO: common]: json file saved at: scores.json]
+[2025-12-13 20:32:41,826: INFO: stage_04_evaluation]: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]

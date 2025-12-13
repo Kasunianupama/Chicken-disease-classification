@@ -3,6 +3,8 @@ import sys
 from chicken_disease_prediction import logger
 from chicken_disease_prediction.pipeline.stage_01_data_ingestion import DataIngestionPipeline
 from chicken_disease_prediction.pipeline.stage_02_prepare_base_model import PrepareBaseModelPipeline
+from chicken_disease_prediction.pipeline.stage_03_training import ModelTrainingPipeline
+from chicken_disease_prediction.pipeline.stage_04_evaluation import EvaluationPipeline
 
 def _ensure_package_on_path(pkg_name='chicken_disease_prediction'):
     here = os.path.dirname(os.path.abspath(__file__))
@@ -89,7 +91,7 @@ except Exception as e:
     logger.exception(e)
     raise e
 
-from chicken_disease_prediction.pipeline.stage_03_training import ModelTrainingPipeline
+#from chicken_disease_prediction.pipeline.stage_03_training import ModelTrainingPipeline
 
 STAGE_NAME = "Training Stage"
 try:
@@ -97,6 +99,16 @@ try:
     model_trainer = ModelTrainingPipeline()
     model_trainer.main()
     logger.info(f">>>>>> Stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+except Exception as e:
+    logger.exception(e)
+    raise e
+
+STAGE_NAME = "Evaluation stage"
+try:
+    logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+    evaluation = EvaluationPipeline()
+    evaluation.main()
+    logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
 except Exception as e:
     logger.exception(e)
     raise e

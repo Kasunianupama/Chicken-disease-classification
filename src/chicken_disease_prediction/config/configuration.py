@@ -1,12 +1,12 @@
 from chicken_disease_prediction.constants import *
 from chicken_disease_prediction.utils.common import read_yaml, create_directories
-from chicken_disease_prediction.entity.config_entity import DataIngestionConfig
-from chicken_disease_prediction.entity.config_entity import PrepareBaseModelConfig
-from chicken_disease_prediction.entity.config_entity import PrepareCallbacksConfig
 import os
-from chicken_disease_prediction.entity.config_entity import TrainingConfig
 from dataclasses import dataclass
 from pathlib import Path
+from chicken_disease_prediction.entity.config_entity import DataIngestionConfig, ValidationConfig as EvaluationConfig
+from chicken_disease_prediction.entity.config_entity import PrepareBaseModelConfig
+from chicken_disease_prediction.entity.config_entity import PrepareCallbacksConfig
+from chicken_disease_prediction.entity.config_entity import TrainingConfig
 
 @dataclass(frozen=True)
 class PrepareCallbacksConfig:
@@ -96,3 +96,13 @@ class ConfigurationManager:
         )
 
         return training_config
+    
+    def get_validation_config(self) -> EvaluationConfig:
+        eval_config = EvaluationConfig(
+            path_of_model=Path("artifacts/training/model.h5"),
+            training_data=Path("artifacts/data_ingestion/Chicken-fecal-images"),
+            all_params=self.params,
+            params_image_size=self.params.IMAGE_SIZE,
+            params_batch_size=self.params.BATCH_SIZE
+        )
+        return eval_config
