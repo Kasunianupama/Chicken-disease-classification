@@ -602,3 +602,49 @@ x==========x]
 [2025-12-13 20:32:41,826: INFO: stage_04_evaluation]: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2025-12-13 20:46:56,853: INFO: _internal]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.76.27:80]
+[2025-12-13 20:46:56,853: INFO: _internal]: [33mPress CTRL+C to quit[0m]
+[2025-12-13 20:47:32,245: INFO: _internal]: 127.0.0.1 - - [13/Dec/2025 20:47:32] "GET / HTTP/1.1" 200 -]
+[2025-12-13 20:47:44,535: INFO: _internal]: 192.168.76.27 - - [13/Dec/2025 20:47:44] "GET / HTTP/1.1" 200 -]
+[2025-12-13 20:50:04,944: INFO: _internal]: 127.0.0.1 - - [13/Dec/2025 20:50:04] "GET / HTTP/1.1" 200 -]
+[2025-12-13 20:50:41,338: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-12-13 20:50:42,638: INFO: _internal]: 127.0.0.1 - - [13/Dec/2025 20:50:42] "POST /predict HTTP/1.1" 200 -]
+[2025-12-13 20:50:54,021: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-12-13 20:50:55,431: INFO: _internal]: 127.0.0.1 - - [13/Dec/2025 20:50:55] "POST /predict HTTP/1.1" 200 -]
+[2025-12-13 20:51:04,638: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-12-13 20:51:05,954: INFO: _internal]: 127.0.0.1 - - [13/Dec/2025 20:51:05] "POST /predict HTTP/1.1" 200 -]
+[2025-12-13 20:51:43,540: INFO: main]: This is a log message from main.py]
+[2025-12-13 20:51:43,540: INFO: main]: >>>>>> Stage Data Ingestion Stage started <<<<<<]
+[2025-12-13 20:51:43,548: INFO: common]: created directory at: artifacts]
+[2025-12-13 20:51:43,548: INFO: common]: created directory at: artifacts/data_ingestion]
+[2025-12-13 20:51:43,550: INFO: data_ingestion]: File already exists of size: ~ 11345 KB]
+[2025-12-13 20:51:43,878: INFO: main]: >>>>>> Stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2025-12-13 20:51:43,886: INFO: main]: >>>>>> Stage Prepare Base Model Stage started <<<<<<]
+[2025-12-13 20:51:43,886: INFO: common]: created directory at: artifacts]
+[2025-12-13 20:51:43,886: INFO: common]: created directory at: artifacts/prepare_base_model]
+[2025-12-13 20:51:45,008: WARNING: saving_api]: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-12-13 20:51:45,225: WARNING: saving_api]: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-12-13 20:51:45,391: INFO: main]: >>>>>> Stage Prepare Base Model Stage completed <<<<<<
+
+x==========x]
+[2025-12-13 20:51:45,391: INFO: main]: >>>>>> Stage Training Stage started <<<<<<]
+[2025-12-13 20:51:45,399: INFO: common]: created directory at: artifacts]
+[2025-12-13 20:51:45,399: INFO: common]: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2025-12-13 20:51:45,399: INFO: common]: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2025-12-13 20:51:45,399: INFO: common]: created directory at: artifacts/training]
+[2025-12-13 20:52:32,957: WARNING: saving_api]: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-12-13 20:52:34,972: WARNING: saving_api]: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-12-13 20:52:35,378: INFO: main]: >>>>>> Stage Training Stage completed <<<<<<
+
+x==========x]
+[2025-12-13 20:52:35,378: INFO: main]: >>>>>> stage Evaluation stage started <<<<<<]
+[2025-12-13 20:52:35,387: INFO: common]: created directory at: artifacts]
+[2025-12-13 20:52:41,660: INFO: common]: json file saved at: scores.json]
+[2025-12-13 20:52:41,660: INFO: main]: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
