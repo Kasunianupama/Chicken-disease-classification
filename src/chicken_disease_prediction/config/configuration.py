@@ -4,6 +4,15 @@ from chicken_disease_prediction.entity.config_entity import DataIngestionConfig
 from chicken_disease_prediction.entity.config_entity import PrepareBaseModelConfig
 from chicken_disease_prediction.entity.config_entity import PrepareCallbacksConfig
 import os
+from chicken_disease_prediction.entity.config_entity import TrainingConfig
+from dataclasses import dataclass
+from pathlib import Path
+
+@dataclass(frozen=True)
+class PrepareCallbacksConfig:
+    root_dir: Path
+    tensorboard_root_log_dir: Path   # match name used in get_prepare_callback_config
+    checkpoint_model_filepath: Path
 
 class ConfigurationManager:
     def __init__(
@@ -65,3 +74,25 @@ class ConfigurationManager:
         )
 
         return prepare_callback_config
+
+    def get_training_config(self) -> TrainingConfig:
+        config = self.config.training
+        prepare_base_model = self.config.prepare_base_model
+
+        # build training data path (folder created by data ingestion)
+        training_data = os.path.join(self.config.data_ingestion.unzip_dir, "Chicken-fecal-images")
+
+        create_directories([config.root_dir])
+
+        training_config = TrainingConfig(
+            root_dir=Path(config.root_dir),
+            trained_model_path=Path(config.trained_model_path),
+            updated_base_model_path=Path(prepare_base_model.updated_base_model_path),
+            training_data=Path(training_data),                # <<-- add this
+            params_epochs=self.params.EPOCHS,
+            params_batch_size=self.params.BATCH_SIZE,
+            params_image_size=self.params.IMAGE_SIZE,
+            params_is_augmentation=self.params.AUGMENTATION
+        )
+
+        return training_config

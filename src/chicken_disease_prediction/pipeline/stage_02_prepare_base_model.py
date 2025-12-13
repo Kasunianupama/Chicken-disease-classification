@@ -24,3 +24,9 @@ if __name__ == "__main__":
     except Exception as e:
         logger.exception(e)
         raise e
+
+        full_model.compile(
+            optimizer=tf.keras.optimizers.Adam(learning_rate=learning_rate),
+            loss="categorical_crossentropy",   # change to categorical because generators return one-hot labels
+            metrics=["accuracy"]
+        )
