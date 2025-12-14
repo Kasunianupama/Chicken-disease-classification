@@ -1,0 +1,9 @@
+[2025-12-13 18:12:00,716: WARNING: deprecation]: From C:\Users\User\AppData\Local\Temp\ipykernel_105480\3036621204.py:7: experimental_run_functions_eagerly (from tensorflow.python.eager.polymorphic_function.eager_function_run) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.config.run_functions_eagerly` instead of the experimental version.]
+[2025-12-13 18:14:23,524: INFO: common]: created directory at: artifacts]
+[2025-12-13 18:14:23,524: INFO: common]: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2025-12-13 18:14:23,524: INFO: common]: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2025-12-13 18:14:23,524: INFO: common]: created directory at: artifacts\training]
+[2025-12-13 18:15:00,331: WARNING: saving_api]: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-12-13 18:15:00,698: WARNING: saving_api]: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
